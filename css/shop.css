@@ -1,0 +1,125 @@
+body{
+    background-position: center;
+}
+
+#logForm{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    left: 20vw;
+    top:10vw;
+    backdrop-filter: blur(20px);
+}
+
+#logimg{
+    float:left;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 45%;
+}
+
+#topic{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    font-style: oblique;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+#detail{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-style: oblique;
+}
+
+#logTop{
+    position: relative;
+    left: 7vw;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#Name,#pass{
+    width: 30vw;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+#all{
+    position: absolute;
+    bottom: 2vw;
+    left:40vw
+}
+
+@media screen and (max-width:910px){
+    #logForm{
+        width: 90%;
+        height:100vw;
+        position: absolute;
+        left: 8vw;
+    }
+
+    #topic{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    #logTop{
+        position: relative;
+        left: 5vw;
+        margin-top: 1rem;
+    }
+    #Name,#pass{
+        width: 35vw;
+    }
+    #logBtn{
+        margin-top: 3rem;
+    }
+
+}
+
+#confirmMsg{
+    width: 15rem;
+    text-align: center;
+    height: 11rem;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    position: fixed;
+    left: 40vw;
+    top:20vw;
+    box-shadow: 1px 2px 1px;
+    display: none;
+    z-index: 1;
+}
+
+#errorMsg{
+    width: 15rem;
+    text-align: center;
+    height: 15rem;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    position: fixed;
+    left: 40vw;
+    top:20vw;
+    box-shadow: 1px 2px 1px;
+    z-index: 1;
+    display: none;
+}
+
+#ok{
+    width: 6rem;
+    position: relative;
+    bottom:0.6rem;
+    right: 0.5rem;
+    background-color: red;
+    color: white;
+}

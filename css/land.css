@@ -1,0 +1,484 @@
+#nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color:rgb(232, 118, 173);
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .topnav a:hover {
+    background-color:rgb(226, 20, 144);
+    color: black;
+  }
+  
+  .topnav a.active {
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+    
+  }
+
+  #conBtn{
+    position: absolute;
+    right: 1rem;
+    top:0.5rem;
+    width: 5rem;
+    height: 2.5rem;
+    background-color:black;
+    color: white;
+    
+  }
+
+  #cartBtn{
+    position: absolute;
+    right: 8rem;
+    top:0.5rem;
+    width: 5rem;
+    height: 2.5rem;
+    background-color:black;
+    color: white;
+  }
+  #conBtn:hover,#cartBtn:hover{
+    background-color: rgb(226, 20, 144);
+    color: black;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    #conBtn{
+        right: 3.5rem
+    }
+    #cartBtn{
+      right:10rem ;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right:0px;
+      top: 0px;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+#welcome{
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 5vw;
+    color:black;
+    padding-left: 5vw;
+}
+
+#name{
+    padding-left: 12vw;
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style:oblique;
+    font-size: 5vw;
+    color: black;
+}
+
+#caption{
+    position: absolute;
+    top:3rem;
+    left:3vw;
+    background-color: rgb(234, 230, 230);
+    width: 50vw;
+    padding-left: 1rem;
+    height:89vh ;
+    box-shadow:  2px 2px 2px rgb(229, 117, 135);
+}
+
+#IMG{
+  background-color: pink;
+  float: right;
+  height: 100vh;
+  width: 70vw;
+  margin-left: 25vw;
+}
+#dis{
+    color: red;
+    font-size: 5vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left:2rem
+}
+#every{
+  font-size: 5vw;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding-left:2rem
+}
+#x{
+  position: relative;
+  bottom: 5vh;
+}
+
+@media screen and (max-width:600px){
+    #welcome{
+      font-size: 8vw;
+    }
+    #name,#every,#dis{
+      font-size: 8vw;
+    }
+    #caption{
+      width: 60vw;
+    }
+    #x{
+      position: relative;
+      bottom: 3vh;
+    }
+    #dis{
+      margin-top: 3rem;
+      padding-left:0.5rem
+    }
+    #every{
+      padding-left:0.5rem;
+    }
+    #IMG{
+      width: 80vw;
+    }
+}
+
+#shopBtn{
+    background-color:rgb(218, 87, 109) ;
+    border: 1px solid rgb(218, 87, 109);
+    position: relative;
+    left:15vw;
+    bottom: 2vw;
+}
+#about{
+  border: 1px solid rgb(229, 117, 135);
+  margin-top:5rem;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-radius: 20px;
+  padding:10px 10px 10px 10px;
+  box-shadow: 2px 2px 2px 2px rgb(229, 117, 135);
+  font-weight: 400;
+}
+#fb{
+  position: absolute;
+  bottom: 2rem;
+  left:10vw;
+  margin-left: 2rem;
+  color: rgb(218, 87, 109);
+}
+#twit{
+  position: absolute;
+  bottom: 2rem;
+  left:15vw;
+  margin-left: 2rem;
+  color: rgb(218, 87, 109);
+}
+#insta{
+  position: absolute;
+  bottom: 2rem;
+  left:20vw;
+  margin-left: 2rem;
+  color: rgb(218, 87, 109);
+}
+#link{
+  position: absolute;
+  bottom: 2rem;
+  left:25vw;
+  margin-left: 2rem;
+  color: rgb(218, 87, 109);
+}
+#fb:hover,#twit:hover,#insta:hover,#link:hover{
+  color: red;
+}
+a:hover{
+  transform: scale(1.1,1.1);
+}
+
+@media screen and (max-width:600px){
+  
+  #fb{
+    position: absolute;
+    left:5vw;
+  }
+  #twit{
+    position: absolute;
+    left:15vw;
+  }
+  #insta{
+    position: absolute;
+    left:25vw;
+  }
+  #link{
+    position: absolute;
+    left:35vw;
+  }
+}
+
+#offers{
+  margin-top: 6rem;
+}
+
+#watch{
+  width: 18rem;
+  height: 20rem;
+  border: 2px solid rgb(229, 117, 135) ;
+  margin-left: 2rem;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px rgb(229, 117, 135);
+  margin-top: 2rem;
+  background-color:antiquewhite;
+}
+#imgW{
+  width: 15rem;
+  height: 14rem;
+  position: relative;
+  left: 0.6rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+
+#cart1,#cart2,#cart3,#cart4,#cart5,#cart6,#cart7,#cart8{
+  background-color: rgb(229, 117, 135);
+  border: 1px solid rgb(229, 117, 135) ;
+  float: right;
+  position: relative;
+  bottom: 3.5rem;
+}
+
+@media screen and (max-width:600px){
+  #watch{
+    margin-left: 7rem;
+  }
+}
+
+#payment{
+  border: 2px solid black;
+  position: fixed;
+  top:20%;
+  left:30%;
+  z-index: 2;
+  color: rgb(224, 77, 102);
+  backdrop-filter: blur(20px);
+  background-color: antiquewhite;
+  padding: 1rem 2rem 2rem 2rem;
+  display: none;
+}
+#item1{
+  width: 25rem;
+  height: 9.5rem;
+  border: 2px solid black;
+}
+#rem{
+  position: absolute;
+  right: 0.4rem;
+  margin-top: 0.2rem;
+}
+#pay{
+  background-color: green;
+  position: absolute;
+  right: 6rem;
+  bottom: 10rem;
+  width: 6rem;
+}
+#cancel{
+  background-color: red;
+  position: absolute;
+  right: 6rem;
+  bottom: 7rem;
+  width: 6rem;
+}
+#msg{
+  position: absolute;
+  left:10rem;
+  bottom: 0.5rem;
+  color: red;
+}
+#confirm{
+  border: 1px solid black;
+  padding: 1rem;
+  width: 40vw;
+  position: fixed;
+  top:30%;
+  left:30%;
+  z-index: 2;
+  background-color: antiquewhite;
+  display: none;
+}
+#services{
+  width: 100%;
+  height: 80vh;
+  margin-top: 8rem;
+  background-color: pink;
+}
+#imgG{
+    height: 80vh;
+    width: 30vw;
+    border: 2px solid rgb(232, 89, 113);
+    box-shadow: 2px 2px 2px  rgb(208, 45, 72);
+}
+#cap{
+  font-size: 5vw;
+  font-weight: 600;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+#capT{
+  position: relative;
+  left:65vw;
+  bottom: 20rem;
+  font-size: 2vw;
+  font-weight: 600;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:600px){
+  #imgG{
+    position: absolute;
+    float: left;
+    width: 40vw;
+  }
+  #cap{
+    position: absolute;
+    left:39vw;
+    width: 50vw;
+    font-size: 7vw;
+  }
+  #capT{
+  position: relative;
+  left:44vw;
+  width: 50vw;
+  top: 6rem;
+  font-size: 2.5vw;
+  }
+  
+}
+
+
+#sponser{
+  border: 2px solid rgb(229, 117, 135);
+  border-radius: 20px;
+  width: 90vw;
+  height: 60vh;
+  margin-left: 5vw;
+  margin-top: 30vh;
+  box-shadow: 2px 2px 1px 1px rgb(208, 45, 72);
+}
+#sp1,#sp3{
+  width: 15vw;
+  height: 15vh;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+#sp2{
+  width: 17vw;
+  height: 23vh;
+  margin-top: 0.6rem;
+  margin-left: 1rem;
+}
+#sp4,#sp5,#sp6,#sp8,#sp9,#sp10{
+  width: 15vw;
+  height: 15vh;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+#sp7{
+  width: 15vw;
+  height: 18vh;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width:1000px){
+  #sponser{
+    width: 90vw;
+    height: 90vh;
+    margin-top: 10rem;
+    margin-left: 5vw;
+  }
+  #sp1,#sp2,#sp3,#sp4,#sp5,#sp6,#sp7,#sp8,#sp9,#sp10{
+    width: 23vw;
+  }
+}
+
+#bottom{
+  margin-top: 6rem;
+}
+
+#cont{
+  margin-left: 2rem;
+}
+#instaC,#twitC,#linkedC{
+  color: white;
+  border: 1px solid rgb(229, 117, 135);
+  padding: 0.7rem;
+  background-color:rgb(229, 117, 135) ;
+  border-radius: 10px;
+}
+#fbC{
+  color: white;
+  border: 1px solid rgb(229, 117, 135);
+  padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+  background-color:rgb(229, 117, 135) ;
+  border-radius: 10px;
+}
+#whatC{
+  background-color: rgb(91, 237, 91);
+  border-radius: 50px;
+  font-size: 2rem;
+}
+
+#fbC:hover,#instaC:hover,#linkedC:hover,#twitC:hover{
+  transform: scale(1.1,1.1);
+}
+
+#topicB{
+  width: 60vw;
+  padding: 0.5rem 1rem 0.5rem 6rem;
+  background-color: rgb(229, 117, 135);
+}
+#us,#uk,#aus{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 18vw;
+  font-size: 1.1vw;
+}
+
+@media screen and (max-width:600px){
+  #topicB{
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #us,#uk,#aus{
+    width: 30vw;
+    font-size: 2vw;
+  }
+}
